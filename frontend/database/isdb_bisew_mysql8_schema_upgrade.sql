@@ -1,0 +1,12 @@
+-- IsDB-BISEW canonical MySQL 8 schema notice
+--
+-- The earlier version of this file described tables that are not part of the
+-- current Laravel application and must not be applied.
+--
+-- Deploy safely:
+--   1. Create an empty MySQL 8 database.
+--   2. Import ../../database/isdb_bisew.sql.
+--   3. Run from backend: php artisan migrate --force
+--
+-- Laravel migrations are the only schema-change source of truth.
+SELECT 'Import database/isdb_bisew.sql, then run php artisan migrate --force.' AS migration_notice;

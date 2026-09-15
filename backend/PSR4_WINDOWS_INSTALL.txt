@@ -1,0 +1,20 @@
+PSR-4 FIXED PACKAGE - WINDOWS INSTALLATION
+
+The older IsDB-BISEW_Backend_Manus_AI_1.6_PHP82.zip package contains obsolete app\Backend\*.php files and produces PSR-4 warnings. Do not reuse that extracted folder.
+
+1. Extract this package into a NEW empty folder, for example:
+   C:\Users\fuyad\Downloads\IsDB-BISEW_Backend_Manus_AI_1.6_PSR4_FIXED
+
+2. Confirm this command prints no files:
+   dir app\Backend /s /b
+
+3. Run from the new folder:
+   composer install
+   composer dump-autoload -o
+   php artisan package:discover
+   php artisan test
+
+4. Composer must report no message containing:
+   does not comply with psr-4
+
+If you continue running Composer from an old folder whose path ends in IsDB-BISEW_Backend_Manus_AI_1.6_PHP82, the old app\Backend files will continue to generate the warnings even after downloading the corrected package.

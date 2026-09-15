@@ -1,0 +1,318 @@
+[
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/App.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/App.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ErrorBoundary.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ErrorBoundary.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ManusDialog.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ManusDialog.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/Map.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/Map.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/admin-ui.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/admin-ui.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/app-shell.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/app-shell.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/route-guards.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/route-guards.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/accordion.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/accordion.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/alert-dialog.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/alert-dialog.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/alert.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/alert.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/aspect-ratio.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/aspect-ratio.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/avatar.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/avatar.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/badge.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/badge.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/breadcrumb.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/breadcrumb.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/button-group.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/button-group.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/button.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/button.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/calendar.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/calendar.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/card.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/card.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/carousel.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/carousel.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/chart.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/chart.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/checkbox.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/checkbox.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/collapsible.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/collapsible.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/command.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/command.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/context-menu.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/context-menu.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/dialog.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/dialog.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/drawer.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/drawer.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/dropdown-menu.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/dropdown-menu.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/empty.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/empty.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/field.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/field.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/form.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/form.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/hover-card.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/hover-card.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/input-group.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/input-group.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/input-otp.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/input-otp.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/input.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/input.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/item.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/item.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/kbd.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/kbd.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/label.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/label.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/menubar.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/menubar.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/navigation-menu.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/navigation-menu.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/pagination.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/pagination.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/popover.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/popover.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/progress.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/progress.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/radio-group.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/radio-group.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/resizable.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/resizable.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/scroll-area.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/scroll-area.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/select.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/select.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/separator.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/separator.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/sheet.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/sheet.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/sidebar.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/sidebar.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/skeleton.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/skeleton.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/slider.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/slider.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/sonner.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/sonner.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/spinner.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/spinner.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/switch.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/switch.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/table.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/table.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/tabs.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/tabs.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/textarea.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/textarea.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/toggle-group.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/toggle-group.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/toggle.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/toggle.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/tooltip.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/components/ui/tooltip.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/const.ts",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/const.js"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/contexts/AuthContext.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/contexts/AuthContext.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/contexts/ThemeContext.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/contexts/ThemeContext.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/hooks/useComposition.ts",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/hooks/useComposition.js"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/hooks/useMobile.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/hooks/useMobile.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/hooks/usePersistFn.ts",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/hooks/usePersistFn.js"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/lib/domain.ts",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/lib/domain.js"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/lib/mock-data.ts",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/lib/mock-data.js"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/lib/utils.ts",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/lib/utils.js"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/main.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/main.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/Home.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/Home.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/NotFound.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/NotFound.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/admin/examination-pages.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/admin/examination-pages.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/admin/governance-pages.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/admin/governance-pages.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/admin/management-pages.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/admin/management-pages.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/public-pages.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/public-pages.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/student-exam-scroll-page.tsx",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/pages/student-exam-scroll-page.jsx"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/services/api-client.ts",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/services/api-client.js"
+  },
+  {
+    "sourcePath": "/home/ubuntu/isdb-bisew-frontend/client/src/services/services.ts",
+    "outputPath": "/home/ubuntu/isdb-bisew-frontend/client/src/services/services.js"
+  }
+]

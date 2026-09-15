@@ -1,0 +1,116 @@
+/* Institutional Ledger design system: serif academic hierarchy, Ledger Green accent, warm administrative canvas, and restrained responsive motion. */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 0.7rem;
+  --background: oklch(0.966 0.005 120);
+  --foreground: oklch(0.255 0.03 160);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.255 0.03 160);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.255 0.03 160);
+  --primary: oklch(0.39 0.08 166);
+  --primary-foreground: oklch(0.99 0.003 120);
+  --secondary: oklch(0.95 0.01 150);
+  --secondary-foreground: oklch(0.3 0.04 160);
+  --muted: oklch(0.95 0.006 120);
+  --muted-foreground: oklch(0.52 0.025 160);
+  --accent: oklch(0.93 0.02 150);
+  --accent-foreground: oklch(0.3 0.04 160);
+  --destructive: oklch(0.55 0.18 25);
+  --destructive-foreground: oklch(0.99 0.003 120);
+  --border: oklch(0.89 0.012 150);
+  --input: oklch(0.89 0.012 150);
+  --ring: oklch(0.39 0.08 166);
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  html { background: #f4f3ef; }
+  body { @apply bg-background font-sans text-foreground antialiased; }
+  button:not(:disabled), [role="button"]:not([aria-disabled="true"]), [type="button"]:not(:disabled), [type="submit"]:not(:disabled), [type="reset"]:not(:disabled), a[href], select:not(:disabled), input[type="checkbox"]:not(:disabled), input[type="radio"]:not(:disabled) { @apply cursor-pointer; }
+  button:not(:disabled):active, [role="button"]:not([aria-disabled="true"]):active { transform: scale(0.98); }
+  ::selection { background: #cfe5da; color: #143b38; }
+}
+
+@layer components {
+  .ledger-scroll { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.22) transparent; }
+  .ledger-scroll::-webkit-scrollbar { width: 5px; }
+  .ledger-scroll::-webkit-scrollbar-thumb { border-radius: 99px; background: rgba(255,255,255,0.22); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  button, a, input, select, textarea { transition: color 150ms cubic-bezier(0.23, 1, 0.32, 1), background-color 150ms cubic-bezier(0.23, 1, 0.32, 1), border-color 150ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 150ms cubic-bezier(0.23, 1, 0.32, 1); }
+}
+
+.print-only-question-paper { display: none; }
+.print-only-cover-page { display: none; }
+
+@media print {
+  @page { size: A4; margin: 16mm 18mm; }
+  /* Hide every top-level child of body except the two print-only blocks.
+     Previously this hid content with visibility:hidden on body *, but a
+     hidden element still reserves its layout box and page space — with
+     the on-screen question preview sitting earlier in the DOM, that
+     reserved space was what produced the trailing blank pages after the
+     real printed content. display:none removes an element from layout
+     entirely. Applying it only to body's direct children (rather than
+     every descendant) means we never touch the display mode of anything
+     *inside* the print-only blocks, so their own Tailwind
+     block/grid/flex/list-item classes render exactly as authored. */
+  /* Only elements that are NOT an ancestor of, and not inside, a
+     print-only block get hidden. `:has()` picks out real ancestors
+     dynamically, so every wrapper between #root and the print-only
+     blocks (the app shell, <main>, the two-column grid, the RecordCard)
+     is left alone automatically — no matter how the component tree is
+     nested — while everything else (sidebar, header, the other
+     RecordCard, the on-screen question preview) collapses to nothing.
+     Hiding an *ancestor* of a print-only block is what silently broke
+     this before: it collapses the block's box regardless of its own
+     display value, so the fix has to reach up the tree, not just hide
+     unrelated siblings. */
+  body *:not(.print-only-cover-page):not(.print-only-cover-page *):not(.print-only-question-paper):not(.print-only-question-paper *):not(:has(.print-only-cover-page)):not(:has(.print-only-question-paper)) { display: none !important; }
+  /* Both print-only blocks stay in normal document flow (no absolute
+     positioning) so they stack top-to-bottom in DOM order: cover page,
+     then question paper. The old absolute+inset:0 on the question paper
+     made it overlay the cover page's box, which is why the cover page's
+     header/title content wasn't visibly appearing. break-before on the
+     question paper (rather than break-after on the cover) keeps the
+     start of each section pinned to its own page regardless of which
+     one is rendered right before it. */
+  .print-only-cover-page { display: block !important; position: static; width: 100%; background: #ffffff; }
+  .print-only-question-paper { display: block !important; position: static; width: 100%; break-before: page; page-break-before: always; padding: 0; color: #1d3d37; background: #ffffff; }
+  .print-only-question-paper article { break-inside: avoid; }
+}
+

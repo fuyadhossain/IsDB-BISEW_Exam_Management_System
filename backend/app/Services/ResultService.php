@@ -1,0 +1,10 @@
+<?php
+namespace App\Services;
+use App\Models\{AuditLog,Batch,CompetencyUnit,Element,Exam,ExamAnswer,ExamAttemptQuestion,ExamResult,ExamSet,ExamViolation,Module,Question,QuestionImport,QuestionImportRow,QuestionOption,Student,StudentExamAttempt,Subject,User};
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\ValidationException;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Str;
+
+class ResultService { public function process(StudentExamAttempt $a): ExamResult { if(!in_array($a->status,['SUBMITTED','EXPIRED'],true)) throw ValidationException::withMessages(['attempt'=>'Only submitted attempts can be processed.']); return DB::transaction(function() use($a){ $a=StudentExamAttempt::whereKey($a->id)->lockForUpdate()->firstOrFail(); if($existing=$a->result) return $existing; $a->load(['exam','questions.question.options','answers']); $correct=$wrong=$unanswered=0; $marks=0; foreach($a->questions as $aq){ $answer=$a->answers->firstWhere('exam_attempt_question_id',$aq->id); $selected=collect($answer?->selected_options??[])->sort()->values()->all(); $correctKeys=collect($aq->question_snapshot['options']??[])->where('is_correct',true)->pluck('option_key')->sort()->values()->all(); if(!$selected){$unanswered++; continue;} if($selected===$correctKeys){$correct++;$marks+=(float)($aq->question_snapshot['marks']??$aq->question->marks);} else $wrong++; } $max=(float)$a->exam->max_marks; $pct=$max>0?round(($marks/$max)*100,2):0; $r=ExamResult::create(['attempt_id'=>$a->id,'student_id'=>$a->student_id,'exam_id'=>$a->exam_id,'correct_answers'=>$correct,'wrong_answers'=>$wrong,'unanswered_questions'=>$unanswered,'total_marks'=>$marks,'percentage'=>$pct,'status'=>$marks >= (\App\Services\FinalResultService::isMonthly($a->exam->exam_type) ? (float)$a->exam->pass_marks : \App\Services\FinalResultService::midPassMark())?'PASS':'FAIL','processed_at'=>now()]); if($a->exam->status==='ENDED') $a->exam->update(['status'=>'PROCESSING']); return $r; }); } }

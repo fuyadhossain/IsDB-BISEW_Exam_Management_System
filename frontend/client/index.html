@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="theme-color" content="#0E5A4F" />
+    <meta name="description" content="IsDB-BISEW online examination management system" />
+    <!-- আগে এখানে "/manus-storage/..." path-এর একটা favicon ছিল — সেটা শুধু
+         Manus platform-এর hosted storage-এ কাজ করত, local-এ 404 দিত। এখন
+         সাধারণ default favicon ব্যবহার হচ্ছে (চাইলে পরে নিজের logo বসাতে পারেন,
+         যেমন public/favicon.png রেখে href="/favicon.png" দিয়ে)। -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+    <title>IsDB-BISEW Examination Management System</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- আগে এখানে একটা analytics (umami) script ছিল যেটা VITE_ANALYTICS_ENDPOINT
+         আর VITE_ANALYTICS_WEBSITE_ID নামের দুইটা env variable ব্যবহার করত।
+         এগুলো কোথাও define করা ছিল না, তাই build/dev দুই জায়গাতেই console-এ
+         error ও broken script tag তৈরি হচ্ছিল। Local run-এ analytics দরকার
+         নেই বলে বাদ দেওয়া হলো। -->
+  </body>
+</html>
